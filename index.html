@@ -2,62 +2,102 @@
 <html>
 <head>
 <style>
+    html{
+        height: 100%;
+    }
+
+    
     body{
         background: #0f0f12;
         color: #eeeeee;
         font-family: sans-serif;
         padding: 0px;
         margin: 0px;
-        height: 100vh;
+        height: 100%;
     }
-
+    
     h1,h2,h3,h4,h5,h6{
         font-family: sans-serif;
         font-weight: bold;
         margin: 0px;
         padding: 0px;
     }
-
-    h1{
-        font-size: 3em;
-    }
-
-    h2{
-        font-size: 2em;
-    }
-
+    
     hr{
         height: 1px;
         border: 0;
         border-top: 2px solid #c2c2c2;
-        margin: 0.2em 0em 0em 0em;
+        margin: 0.2rem 0rem 1rem 0rem;
     }
 
     a:link,a:visited{
         color: #488eff;
         text-decoration: none;
     }
-
+    
     a:hover,a:active{
         text-decoration: underline;
     }
-
+    
     a.project_link
     {
         font-family: sans-serif;
         font-weight: bold;
     }
-
+    
     div.main_column{
         background: #17171b;
-        max-width: 90ch;
+        max-width: 100ch;
         height: 100%;
         margin: 0px auto;
-        padding: 0.5ch 1ch 1ch 1ch;
+        padding: 0.5rem 1rem 1rem 1rem;
+    }
+    
+    div.vertical_spacer{
+        height: 2rem;
+    }
+    
+    @media only screen and (max-width: 574px){
+        html{
+            font-size: 20px;
+        }
+
+        h1{
+            font-size: 1.8rem;
+        }
+        
+        h2{
+            font-size: 1.4rem;
+        }
+
     }
 
-    div.vertical_spacer{
-        height: 0.5em;
+    @media only screen and (min-width: 575px) and (max-width: 865px){
+        html{
+            font-size: 18px;
+        }
+
+        h1{
+            font-size: 2.5rem;
+        }
+        
+        h2{
+            font-size: 1.6rem;
+        }
+    }
+
+    @media only screen and (min-width: 866px){
+        html{
+            font-size: 16px;
+        }
+
+        h1{
+            font-size: 4rem;
+        }
+        
+        h2{
+            font-size: 2rem;
+        }
     }
 </style>
 </head>
@@ -65,13 +105,15 @@
     <div class="main_column">
         <h1>bryanrykowski.github.io</h1>
         <div class="vertical_spacer"></div>
-        <div class="vertical_spacer"></div>
-        <div class="vertical_spacer"></div>
         <h2>Current Projects</h2>
         <hr>
-        <div class="vertical_spacer"></div>
         <a class="project_link" href="https://www.github.com/bryanrykowski/dimtray">DimTray</a> - A .NET based Windows screen brightness tool.<br>
         <a class="project_link" href="https://www.github.com/bryanrykowski/pngimp">pngimp</a> - A single header C++ PNG importer library.
+        <br>
+        <br>
+        <h2>Links</h2>
+        <hr>
+        <a class="project_link" href="https://www.linkedin.com/in/bryan-rykowski">LinkedIn</a>
     </div>
 </body>
 </html>
