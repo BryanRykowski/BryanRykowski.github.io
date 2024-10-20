@@ -11,12 +11,19 @@
 
         
         body{
-            background: #0f0f12;
+            background: #121215;
             color: #eeeeee;
             font-family: sans-serif;
             padding: 0px;
             margin: 0px;
             height: 100%;
+        }
+
+        @media (prefers-color-scheme: light){
+            body{
+                background: #e0e0ef;
+                color: #000000;
+            }
         }
 
         div.flex-container{
@@ -45,11 +52,22 @@
             margin: 0.2rem 0rem 1rem 0rem;
         }
 
+        @media (prefers-color-scheme: light){
+            hr{
+                border-top: 2px solid #606060;
+            }
+        }
+
         a:link,a:visited{
             color: #488eff;
             text-decoration: none;
         }
         
+        @media (prefers-color-scheme: light){
+            a:link,a:visited{
+                color: #0000ff;
+            }
+        }
         a:hover,a:active{
             text-decoration: underline;
         }
@@ -67,6 +85,12 @@
             margin: 0px auto;
             padding: 2rem 1rem 1rem 1rem;
             box-sizing: border-box;
+        }
+
+        @media (prefers-color-scheme: light){
+            div.main_column{
+                background: #ffffff;
+            }
         }
         
         div.vertical_spacer{
